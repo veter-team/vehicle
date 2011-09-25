@@ -1,0 +1,6 @@
+[submodule "remote-intrefaces"]
+	path = remote-intrefaces
+	url = git@github.com:veter-team/remote-intrefaces.git
+[submodule "cmake-modules"]
+	path = cmake-modules
+	url = git@github.com:veter-team/cmake-modules.git
