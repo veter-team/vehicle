@@ -4,6 +4,8 @@ PROJECT(vehicle)
 SET(VEHICLE_VERSION 0.8+devel)
 SET(PROJECT_NAME vehicle)
 
+add_definitions(-D__GLIBC__)
+
 add_subdirectory(chassis)
 add_subdirectory(i2c-sensors)
 add_subdirectory(servo)
