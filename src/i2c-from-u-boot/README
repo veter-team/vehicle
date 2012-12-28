@@ -1,9 +1,0 @@
-Files in this directory are modified version of the same files found
-in u-boot. Despite being heavyly modified, they still contains
-original copyright notices in the beginning. I hope it does not
-violate any rules. If it is, please let me know how to correct it.
-
-In addition, this directory contains simple test application test.cpp
-which illustrates how to work with this API.
-
-Andrey Nechypurenko (andreynech@gmail.com)
