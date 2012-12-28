@@ -5,9 +5,9 @@ SET(VEHICLE_VERSION 0.2+devel)
 SET(PROJECT_NAME i2c-sensors)
 
 if(WIN32)
-  list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake-modules/windows)
+  list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/../cmake-modules/windows)
 else(WIN32)
-  list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake-modules/linux)
+  list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/../cmake-modules/linux)
 endif (WIN32)
 
 find_package(Ice REQUIRED)
@@ -21,14 +21,14 @@ link_directories(${ICE_LIBRARY_DIR})
 set(ICE_SLICE2CPP slice2cpp)
 
 add_custom_command(OUTPUT ${PROJECT_BINARY_DIR}/admin.cpp ${PROJECT_BINARY_DIR}/admin.h
-                   COMMAND ${ICE_SLICE2CPP} -I${ICE_SLICE_DIR} --output-dir ${PROJECT_BINARY_DIR} ${PROJECT_SOURCE_DIR}/remote-interfaces/admin.ice
-                   MAIN_DEPENDENCY ${PROJECT_SOURCE_DIR}/remote-interfaces/admin.ice
-                   COMMENT "invoking slice2cpp on ${PROJECT_SOURCE_DIR}/remote-interfaces/admin.ice")
+                   COMMAND ${ICE_SLICE2CPP} -I${ICE_SLICE_DIR} --output-dir ${PROJECT_BINARY_DIR} ${PROJECT_SOURCE_DIR}/../remote-intrefaces/admin.ice
+                   MAIN_DEPENDENCY ${PROJECT_SOURCE_DIR}/../remote-intrefaces/admin.ice
+                   COMMENT "invoking slice2cpp on ${PROJECT_SOURCE_DIR}/../remote-intrefaces/admin.ice")
 
 add_custom_command(OUTPUT ${PROJECT_BINARY_DIR}/sensors.cpp ${PROJECT_BINARY_DIR}/sensors.h
-                   COMMAND ${ICE_SLICE2CPP} -I${ICE_SLICE_DIR} --output-dir ${PROJECT_BINARY_DIR} ${PROJECT_SOURCE_DIR}/remote-interfaces/sensors.ice
-                   MAIN_DEPENDENCY ${PROJECT_SOURCE_DIR}/remote-interfaces/sensors.ice
-                   COMMENT "invoking slice2cpp on ${PROJECT_SOURCE_DIR}/remote-interfaces/sensors.ice")
+                   COMMAND ${ICE_SLICE2CPP} -I${ICE_SLICE_DIR} --output-dir ${PROJECT_BINARY_DIR} ${PROJECT_SOURCE_DIR}/../remote-intrefaces/sensors.ice
+                   MAIN_DEPENDENCY ${PROJECT_SOURCE_DIR}/../remote-intrefaces/sensors.ice
+                   COMMENT "invoking slice2cpp on ${PROJECT_SOURCE_DIR}/../remote-intrefaces/sensors.ice")
 
 #                     [DEPENDS [depends...]]
 #                     [IMPLICIT_DEPENDS <lang1> depend1 ...]
