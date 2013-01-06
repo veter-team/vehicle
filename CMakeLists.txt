@@ -4,7 +4,8 @@ PROJECT(vehicle)
 SET(VEHICLE_VERSION 0.8+devel)
 SET(PROJECT_NAME vehicle)
 
-add_definitions(-D__GLIBC__)
+# This definition is only necessary if compiling natively
+#add_definitions(-D__GLIBC__)
 
 add_subdirectory(chassis)
 add_subdirectory(i2c-sensors)
