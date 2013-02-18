@@ -1,3 +1,6 @@
+/* Copyright (c) 2013 Andrey Nechypurenko
+   See the file COPYING for copying permission.
+*/
 #include <stdio.h>
 #include <linux/videodev2.h>
 #include <libv4l2.h>

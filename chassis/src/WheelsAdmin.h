@@ -1,3 +1,6 @@
+/* Copyright (c) 2013 Andrey Nechypurenko
+   See the file COPYING for copying permission.
+*/
 #ifndef __WHEELSADMIN_H
 #define __WHEELSADMIN_H
 

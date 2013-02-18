@@ -1,3 +1,6 @@
+/* Copyright (c) 2013 Andrey Nechypurenko
+   See the file COPYING for copying permission.
+*/
 #include <stdio.h>
 #include <unistd.h>
 #include <stdint.h>

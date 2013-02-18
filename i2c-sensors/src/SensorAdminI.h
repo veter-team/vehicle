@@ -1,3 +1,6 @@
+/* Copyright (c) 2013 Andrey Nechypurenko
+   See the file COPYING for copying permission.
+*/
 #ifndef __SENSORADMINI_H
 #define __SENSORADMINI_H
 

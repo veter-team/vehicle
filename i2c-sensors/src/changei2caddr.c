@@ -1,3 +1,6 @@
+/* Copyright (c) 2013 Andrey Nechypurenko
+   See the file COPYING for copying permission.
+*/
 /**
  * Possible addresses: E0, E2, E4, E6, E8, EA, EC, EE, F0, 
  *                     F2, F4, F6, F8, FA, FC, FE

@@ -1,3 +1,6 @@
+/* Copyright (c) 2013 Andrey Nechypurenko
+   See the file COPYING for copying permission.
+*/
 #include "SensorGroupI.h"
 #include <unistd.h>
 #include <sstream>

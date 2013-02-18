@@ -1,3 +1,6 @@
+/* Copyright (c) 2013 Andrey Nechypurenko
+   See the file COPYING for copying permission.
+*/
 #include <sys/mman.h>
 #include "IceSvc.h"
 #include "WheelsGroup.h"
